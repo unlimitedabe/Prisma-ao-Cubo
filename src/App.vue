@@ -1,29 +1,35 @@
 <template>
   <div id="app">
-    <!-- Navbar fixa em todas as rotas/páginas -->
+    <!-- Navbar fixa -->
     <Navbar />
 
-    <!-- conteúdo das páginas; lembre-se de dar um padding-top
-         para não ficar embaixo da navbar -->
+    <!-- Conteúdo principal -->
     <main class="main-content">
-      <router-view />
+      <HelloWorld />
     </main>
+
+    <!-- Rodapé em todas as páginas -->
+    <Footer />
   </div>
 </template>
 
 <script setup>
 import Navbar from './components/Navbar.vue'
+import Footer   from './components/Footer.vue'
+import HelloWorld from './components/HelloWorld.vue'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap' // importa o JS do Bootstrap (necessário para componentes como collapse, dropdown etc.)
+import 'bootstrap'
 </script>
 
 <style>
-/* cria um offset para o conteúdo principal não ficar encoberto */
+/* offset para navbar */
 .main-content {
   padding-top: 143px;
+  /* opcional: min-height para empurrar o footer para o fim da página quando conteúdo for pouco */
+  /* min-height: calc(100vh - 143px - 311px); */
 }
-/* opcional: reseta body/html para altura total */
+
 html, body, #app {
   margin: 0;
   padding: 0;
