@@ -3,6 +3,7 @@
     <!-- Primeira faixa: 168px de altura, #4E55A2 -->
     <div class="footer-top">
       <div class="footer-top-container">
+        
         <!-- Bloco Esquerdo -->
         <div class="footer-contact">
           <span class="footer-title">CONTATOS</span>
@@ -11,22 +12,15 @@
         <!-- Bloco Central -->
         <div class="footer-social">
           <span class="footer-subtitle">Social media</span>
-          <!-- <span class="footer-line">
-            <i class="bi bi-instagram icon"></i>
-            @prismaocubo
-          </span>
-          <span class="footer-line">
-            <i class="bi bi-google icon"></i>
-            prismaocubo@gmail.com
-          </span> -->
+          <!-- Instagram -->
           <div class="footer-line-icon">
             <i class="bi bi-instagram icon"></i>
             <span>@prismaocubo</span>
           </div>
-
+          <!-- Gmail -->
           <div class="footer-line-icon">
             <!-- <i class="bi bi-google icon-gmail"></i> --> <!-- icone google -->
-             <i class="bi bi-envelope-fill icon-gmail"></i> <!-- icone email -->
+            <i class="bi bi-envelope-fill icon-gmail"></i> <!-- icone email -->
             <span>prismaocubo@gmail.com</span>
           </div>
         </div>
@@ -64,10 +58,10 @@
 
 <style scoped>
 .footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 98.9vw;
   z-index: 1000;
   align-items: center;
 }
@@ -93,12 +87,24 @@
   padding: 0 15px; /* 40px nas laterais */
 }
 
-.footer-contact,
-.footer-social,
+.footer-contact{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-left: 8px; /* Distância até a margem esquerda */
+}
+
+.footer-social{
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
 .footer-hours {
   display: flex;
   flex-direction: column;
   color: white;
+  margin-right: 8px; /* Distância até a margem direita */
 }
 
 .footer-title {
@@ -139,14 +145,14 @@
 
 .icon {
   width: 25px;
-  height: 29px;
+  height: 28px;
   font-size: 25px; /* isso define o tamanho do ícone */
   flex-shrink: 0;   /* evita que ele encolha em telas pequenas */
 }
 
 .icon-gmail {
   width: 25px;
-  height: 28px;
+  height: 27px;
   font-size: 25px; /* isso define o tamanho do ícone */
   flex-shrink: 0;   /* evita que ele encolha em telas pequenas */
 }
@@ -176,7 +182,7 @@
   color: #ffffff;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 18px;
-  margin-left: 4px;
+  margin-left: 11px; /* Distância até a margem esquerda */
   line-height: 23px;
   text-align: left;  /* <<< Essencial para que o texto de baixo comece na mesma margem que o de cima  */
   padding-top: 19px;
@@ -185,7 +191,7 @@
 .footer-bottom .logo {
   height: 120px;
   object-fit: contain;
-  margin-right: -18px;
+  margin-right: -11px; /* Distância até a margem direita */
 }
 
 </style>

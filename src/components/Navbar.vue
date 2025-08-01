@@ -62,7 +62,7 @@ const isHovered = ref(false)
 
 .logo {
   height: 120px;
-  margin-left: -19px;
+  margin-left: -12px; /*Distânica para a margem esquerda*/
   display: block;
   object-fit: contain;
 }
@@ -70,7 +70,7 @@ const isHovered = ref(false)
 
 .menu-wrapper {
   position: relative;
-  margin-right: 4px;
+  margin-right: 12px; /*Distância para a margem direita*/
   width: 60px;
   height: 30px;
   cursor: pointer;
@@ -100,7 +100,7 @@ const isHovered = ref(false)
 /* Texto do menu */
 .menu-text {
   position: absolute;
-  right: 100%;
+  right: 85%; /*Distância até o svg ; ou 60%*/
   top: 50%;
   display: flex;
   gap: 38px;
