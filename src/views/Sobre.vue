@@ -194,7 +194,7 @@ function scrollByScreens(n = 1) {
   })
 }
 
-function scrollDown() { scrollByScreens(3) }   // 1 tela inteira
+function scrollDown() { scrollByScreens(1.45) }   // 2 tela inteira
 function scrollUp()   { scrollByScreens(-3) }  // sobe 1 tela
 
 
