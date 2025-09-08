@@ -15,10 +15,10 @@
         </svg>
 
         <ul class="menu-text">
-          <li><a href="/">sobre</a></li>
+          <li><router-link to="/">sobre</router-link></li>
           <li><a @click="scrollDown">contato</a></li>
-          <li><a href="/serviços">serviços</a></li>
-          <li><a href="/projetos">projetos</a></li>
+          <li><router-link to="/serviços">serviços</router-link>></li>
+          <li><router-link to="/projetos">projetos</router-link></li>
         </ul>
       </div>
     </div>

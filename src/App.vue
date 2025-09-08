@@ -5,7 +5,7 @@
 
     <!-- Conteúdo principal -->
     <main class="main-content">
-      <Sobre />
+      <router-view />
     </main>
 
     <!-- Rodapé -->
@@ -16,7 +16,7 @@
 <script setup>
 import Navbar from './components/Navbar.vue'
 import Footer from './components/Footer.vue'
-import Sobre from './views/Sobre.vue'
+// import Sobre from './views/Sobre.vue'
 
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
