@@ -15,10 +15,10 @@
         </svg>
 
         <ul class="menu-text">
-          <li><a href="#sobre">sobre</a></li>
-          <li><a href="#contato">contato</a></li>
-          <li><a href="#serviços">serviços</a></li>
-          <li><a href="#projetos">projetos</a></li>
+          <li><a href="/">sobre</a></li>
+          <li><a @click="scrollDown">contato</a></li>
+          <li><a href="/serviços">serviços</a></li>
+          <li><a href="/projetos">projetos</a></li>
         </ul>
       </div>
     </div>
@@ -32,6 +32,8 @@ import retractIcon from '/src/assets/icone_menu_retraido_Prancheta_1.png'
 
 const isHovered = ref(false)
 
+const getVH = () => Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
+
 import { onMounted } from 'vue'
 
 onMounted(() => {
@@ -41,6 +43,16 @@ onMounted(() => {
     container.style.maxWidth = `${larguraTela}px`
   }
 })
+
+/** rola n telas (pode ser 1, 1.25, 2, etc.) */
+function scrollByScreens(n = 1) {
+  window.scrollBy({
+    top: getVH() * n,
+    behavior: 'smooth',
+  })
+}
+
+function scrollDown() { scrollByScreens(3) }   // 2 tela inteira
 
 </script>
 
