@@ -463,7 +463,7 @@ onBeforeUnmount(() => {
   font-weight: 700;
   font-size: clamp(22px, 2.8vw, 40px); /* 30pt ≈ 40px */
   line-height: 1.2;
-  margin: 0 0 clamp(12px, 2vw, 24px) 0; /* respiro abaixo */
+  margin: 0 0 clamp(12px, 5vw, 31px) 0; /* respiro abaixo */
 }
 
 .texto-faixa-bottom-last-left > .criatividade {
@@ -472,23 +472,23 @@ onBeforeUnmount(() => {
 
 .texto-faixa-bottom-last-left > .personalidade {
   position: absolute;
-  top: 249px;
+  top: 254px;
 }
 
 .texto-faixa-bottom-last-left > .aprendizado {
   position: absolute;
-  top: 428px;
+  top: 431px;
 }
 
 .texto-faixa-bottom-last-left > .excelencia {
   position: absolute;
-  top: 160px;
+  top: 165px;
   left: 400px
 }
 
 .texto-faixa-bottom-last-left > .colaboracao {
   position: absolute;
-  top: 339px;
+  top: 342px;
   left: 400px
 }
 
