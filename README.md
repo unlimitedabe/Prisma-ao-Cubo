@@ -12,13 +12,13 @@ O projeto foi desenvolvido com **Vue.js 3 e Vite**, com atenção especial à re
 ## Visão geral
 
 ![Página Sobre do Prisma ao Cubo](docs/images/sobre-desktop.png)
-*Fonte: @desing.bertonicarol*
+*Fonte: @design.bertonicarol*
 
 ![Página Serviços do Prisma ao Cubo](docs/images/servicos-desktop.png)
-*Fonte: @desing.bertonicarol*
+*Fonte: @design.bertonicarol*
 
 ![Página Projetos do Prisma ao Cubo](docs/images/projetos-desktop.png)
-*Fonte: @desing.bertonicarol*
+*Fonte: @design.bertonicarol*
 
 O Prisma ao Cubo foi concebido como um estúdio voltado à integração entre design e desenvolvimento.
 
@@ -141,7 +141,7 @@ O desenvolvimento foi realizado a partir de uma especificação visual contendo 
 Exemplo da prototipagem:
 
 ![Prototipagem com especificações](docs/images/prototipagem-sobre.png)
-*Fonte: @desing.bertonicarol*
+*Fonte: @design.bertonicarol*
 
 Entre as especificações estavam:
 
@@ -222,8 +222,8 @@ Implementação frontend e adaptação da interface para web:
 Concepção visual, identidade e prototipagem:
 
 **Carolinne Bertoni**
-* [Portfólio / site](www.carolinnebertoni.com)
-* [Instagram](https://www.instagram.com/desing.bertonicarol/)
+* [Portfólio / site](https://www.carolinnebertoni.com)
+* [Instagram](https://www.instagram.com/design.bertonicarol/)
 
 A implementação apresentada neste repositório foi desenvolvida a partir da concepção visual elaborada pela designer acima. A autoria do design deve ser preservada em qualquer referência ao projeto.
 
