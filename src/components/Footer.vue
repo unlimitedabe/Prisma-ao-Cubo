@@ -1,101 +1,115 @@
 <template>
   <footer class="footer">
-    <!-- Primeira faixa: 168px de altura, #4E55A2 -->
-    <div class="footer-top">
-      <div class="footer-top-container">
-        <!-- Bloco Esquerdo -->
-        <div class="footer-contact">
-          <span class="footer-title">CONTATOS</span>
-        </div>
+      <!-- Primeira faixa: altura proporcional -->
+      <div class="footer-top">
+          <div class="footer-top-container"  id="footer-top-container">
+            <!-- Bloco Esquerdo -->
+            <div class="footer-contact">
+              <span class="footer-title">CONTATOS</span>
+            </div>
 
-        <!-- Bloco Central -->
-        <div class="footer-social">
-          <span class="footer-subtitle">Social media</span>
-          <!-- <span class="footer-line">
-            <i class="bi bi-instagram icon"></i>
-            @prismaocubo
-          </span>
-          <span class="footer-line">
-            <i class="bi bi-google icon"></i>
-            prismaocubo@gmail.com
-          </span> -->
-          <div class="footer-line-icon">
-            <i class="bi bi-instagram icon"></i>
-            <span>@prismaocubo</span>
+            <!-- Bloco Central -->
+            <div class="footer-social">
+              <span class="footer-subtitle">Social media</span>
+              <div class="footer-line-icon">
+                <i class="bi bi-instagram icon"></i>
+                <span>@prismaocubo</span>
+              </div>
+              <div class="footer-line-icon">
+                <i class="bi bi-envelope-fill icon-gmail"></i>
+                <span>prismaocubo@gmail.com</span>
+              </div>
+            </div>
+
+            <!-- Bloco Direito -->
+            <div class="footer-hours">
+              <span class="footer-subtitle">Atendimento</span>
+              <span class="footer-line">Segunda - Sexta</span>
+              <span class="footer-line">9h às 18h</span>
+            </div>
           </div>
+      </div>
 
-          <div class="footer-line-icon">
-            <!-- <i class="bi bi-google icon-gmail"></i> --> <!-- icone google -->
-             <i class="bi bi-envelope-fill icon-gmail"></i> <!-- icone email -->
-            <span>prismaocubo@gmail.com</span>
-          </div>
-        </div>
-
-        <!-- Bloco Direito -->
-        <div class="footer-hours">
-          <span class="footer-subtitle">Atendimento</span>
-          <span class="footer-line">Segunda - Sexta</span>
-          <span class="footer-line">9h às 18h</span>
+      <!-- Segunda faixa -->
+      <div class="footer-bottom">
+        <div class="container" id="footer-bottom-container">
+          <p class="footer-text">
+            © 2025 Prisma ao Cubo. Todos os direitos reservados.<br>
+            Cookies e privacidade
+          </p>
+          <img
+            class="logo"
+            src="/src/assets/logo_prismaocubo3_RGB_P&Bneeg_2.png"
+            alt="Logo Prisma ao Cubo"
+          />
         </div>
       </div>
-    </div>
-
-
-    <!-- Segunda faixa: 143px de altura, #2B2E69 -->
-    <div class="footer-bottom">
-      <div class="container">
-        <p class="footer-text">
-          © 2025 Prisma ao Cubo. Todos os direitos reservados.<br>
-          Cookies e privacidade
-        </p>
-        <img
-          class="logo"
-          src="/src/assets/logo_prismaocubo3_RGB_P&Bneeg.png"
-          alt="Logo Prisma ao Cubo"
-        />
-      </div>
-    </div>
   </footer>
 </template>
 
 <script setup>
-// Lógica adicional, se necessário
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  const larguraTela = window.screen.width
+
+  const footerTop = document.getElementById('footer-top-container')
+  const footerBottom = document.getElementById('footer-bottom-container')
+
+  if (footerTop) {
+    footerTop.style.maxWidth = `${larguraTela}px`
+  }
+
+  if (footerBottom) {
+    footerBottom.style.maxWidth = `${larguraTela}px`
+  }
+})
 </script>
 
 <style scoped>
 .footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
-  left: 0;
-  width: 100%;
+  width: 100%; 
   z-index: 1000;
-  align-items: center;
+  align-items: center; 
 }
 
 /* Primeira Faixa */
-
 .footer-top {
   width: 100%;
-  height: 168px;
+  height: clamp(96px, 12vw, 168px);
   background-color: #4E55A2;
   display: flex;
   align-items: center;
 }
 
 .footer-top-container {
-  width: 90%;
+  width: 100%;
   text-align: left;
-  max-width: 1200px;
+  /* ALINHAR OS MAX-WIDHT DO NAVBAR E DO footer
+  max-width: 1200px;  */
   margin: 0 auto;
+  padding-inline: clamp(8px, 4vw, 40px);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 15px; /* 40px nas laterais */
 }
 
-.footer-contact,
-.footer-social,
+.footer-contact{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-left: 58px; /* DIstância até a margem esquerda*/
+}
 .footer-hours {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-right: 58px; /* DIstância até a margem direita*/
+}
+
+.footer-social {
   display: flex;
   flex-direction: column;
   color: white;
@@ -104,69 +118,55 @@
 .footer-title {
   font-family: 'Barlow', sans-serif;
   font-weight: bold;
-  font-size: 30px;
+  font-size: clamp(18px, 2.2vw, 30px);
 }
 
 .footer-subtitle {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: bold;
-  font-size: 20px;
+  font-size: clamp(14px, 1.5vw, 20px);
   margin-bottom: 4px;
 }
 
 .footer-line {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 20px;
+  font-size: clamp(12px, 1.4vw, 20px);
   font-weight: 400;
   line-height: 1.4;
-} 
-/*
-.icon {
-  font-size: 17px;
-  vertical-align: middle;
-  margin-right: 8px; /* espaço entre ícone e texto 
-} */
+}
+
 .footer-line-icon {
   display: flex;
-  align-items: center; /* centraliza o ícone com o texto */
-  gap: 7px;             /* espaço entre ícone e texto */
+  align-items: center;
+  gap: clamp(4px, 0.8vw, 8px);
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 20px;
+  font-size: clamp(12px, 1.4vw, 20px);
   font-weight: 400;
   line-height: 1.4;
-  margin-top: 0px;
 }
 
-.icon {
-  width: 25px;
-  height: 29px;
-  font-size: 25px; /* isso define o tamanho do ícone */
-  flex-shrink: 0;   /* evita que ele encolha em telas pequenas */
-}
-
+.icon,
 .icon-gmail {
-  width: 25px;
-  height: 28px;
-  font-size: 25px; /* isso define o tamanho do ícone */
-  flex-shrink: 0;   /* evita que ele encolha em telas pequenas */
+  font-size: clamp(18px, 2vw, 25px);
+  width: clamp(18px, 2vw, 25px);
+  height: clamp(18px, 2vw, 28px);
+  flex-shrink: 0;
 }
-
 
 /* Segunda Faixa */
-
 .footer-bottom {
   width: 100%;
-  height: 143px;
+  height: clamp(96px, 10vw, 143px);
   background-color: #2B2E69;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Novo contêiner centralizador, igual ao da navbar */
 .footer-bottom .container {
-  width: 90%;
-  max-width: 1200px;
+  width: 100%;
+  /* max-width: 1200px; */
+  padding-inline: clamp(8px, 4vw, 40px);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -175,17 +175,16 @@
 .footer-text {
   color: #ffffff;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 18px;
-  margin-left: 4px;
-  line-height: 23px;
-  text-align: left;  /* <<< Essencial para que o texto de baixo comece na mesma margem que o de cima  */
-  padding-top: 19px;
+  font-size: clamp(14px, 1.5vw, 18px);
+  line-height: 1.4;
+  text-align: left;
+  padding-top: clamp(10px, 1.4vw, 19px);
+  margin-left: 59px; /* DIstância até a margem esquerda*/
 }
 
 .footer-bottom .logo {
-  height: 120px;
+  height: clamp(70px, 8vw, 120px);
   object-fit: contain;
-  margin-right: -18px;
+  margin-right: 59px; /* DIstância até a margem direita*/
 }
-
 </style>
