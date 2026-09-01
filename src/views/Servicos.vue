@@ -74,7 +74,8 @@ svg {
   align-items: center; */
 }
 
-
-
+mexer no background para sempre ficar branco
+ver se da pra usar o svg como bloco de container (conseguir colocar certinho os elemntos dentro dele sem usar absolute talvez)
+arrumar a navegação entre as abas (altura quando muda de aba está se mantendo a mesma e quando dou refresh em uma o conteudo dela desaparece)
 
 </style>
