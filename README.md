@@ -13,8 +13,10 @@ O projeto foi desenvolvido com **Vue.js 3 e Vite**, com atenção especial à re
 
 ![Página Sobre do Prisma ao Cubo](docs/images/sobre-desktop.png)
 *Fonte: @desing.bertonicarol*
+
 ![Página Serviços do Prisma ao Cubo](docs/images/servicos-desktop.png)
 *Fonte: @desing.bertonicarol*
+
 ![Página Projetos do Prisma ao Cubo](docs/images/projetos-desktop.png)
 *Fonte: @desing.bertonicarol*
 
@@ -220,8 +222,8 @@ Implementação frontend e adaptação da interface para web:
 Concepção visual, identidade e prototipagem:
 
 **Carolinne Bertoni**
-![Portfólio / site](www.carolinnebertoni.com)
-![Instagram](https://www.instagram.com/desing.bertonicarol/)
+* [Portfólio / site](www.carolinnebertoni.com)
+* [Instagram](https://www.instagram.com/desing.bertonicarol/)
 
 A implementação apresentada neste repositório foi desenvolvida a partir da concepção visual elaborada pela designer acima. A autoria do design deve ser preservada em qualquer referência ao projeto.
 
