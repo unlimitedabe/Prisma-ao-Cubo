@@ -222,7 +222,7 @@ Implementação frontend e adaptação da interface para web:
 Concepção visual, identidade e prototipagem:
 
 **Carolinne Bertoni**
-* [Portfólio / site](https://www.carolinnebertoni.com/)
+* [Portfólio/Site](https://www.carolinnebertoni.com/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAcGRvZgJleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAadt8FtYP71D8kaYxIvW9xtTC5Bh1hr0uLU7h-eW2UsGXDB45PzbDVoX7sO71Q_aem_l9IZvE5uzyCrsdo9tmBxRA)
 * [Instagram](https://www.instagram.com/design.bertonicarol/)
 
 A implementação apresentada neste repositório foi desenvolvida a partir da concepção visual elaborada pela designer acima. A autoria do design deve ser preservada em qualquer referência ao projeto.
